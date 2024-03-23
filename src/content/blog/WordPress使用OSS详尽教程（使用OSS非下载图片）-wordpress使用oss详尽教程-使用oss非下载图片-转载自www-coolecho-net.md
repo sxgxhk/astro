@@ -1,0 +1,12 @@
+---
+title: WordPress使用OSS详尽教程（使用OSS非下载图片）
+date: 2015-12-21 05:28:00.0
+updated: 2021-12-22 17:01:20.0
+url: /archives/wordpress使用oss详尽教程-使用oss非下载图片-转载自www-coolecho-net
+categories: 
+- 网站建设
+tags: 
+- Wordpress
+---
+
+<p>自己用的是阿里云的ECS，一直想用OSS存储图片，可惜碍于技术能力有限（最主要还是担心口袋里的银子），终于等到今天鼓起勇气使用OSS，先用一个月看看，贵咱就……言归正传，看了阿里云论坛上就关于Wordpress使用OSS有很多招，插件、第三方工具等等，还是用插件吧，具体的就看下面这篇文章吧，写的蛮详细的，直接转载了：</p><p>最近在阿里云申请了一个OSS，OSS是个开放存储器，闲话不多说，我们做项目的时候就是拿它当作专门存储图片的，可以看成一个云端的硬盘。<br />WordPress其实是有插件可以直接使用OSS，但是由于OSS时常改进，所以该插件使用的时候会有点问题，反正我就遇到了很多问题，这里给大家详尽讲解一下如何使用oss4wp的全部过程。</p><p>首先，大家应该得明白，当我们把图片上传到OSS，使用OSS给的地址，浏览器会直接去下载图片，这个不是我们想要的，然而OSS为了安全起见，默认就是直接下载，据说老版本可以通过修改Http头，达到显示图片而不是下载图片的效果，然而我现在用的完全不行，只能通过绑定二级域名来达到这种效果。</p><p>这里拜一下大神，原本的插件下载地址：<a href="http://bbs.aliyun.com/read/119733.html?spm=0.0.0.0.Mxs2NM">oss4wp插件下载</a><br />知道我们需要二级域名，接下来我们就需要去绑定一个二级域名，我的域名是在万网上面买的。</p><h3>打开域名解析</h3><p>&nbsp;</p><p>2.点击添加解析</p><p>记住这里的记录类型一定要选择A，主机记录我写的为  img ，记录值为主机ip地址，解析完成后，我们就可以通过  img.coolecho.net 这个二级域名来访问我们的网站，解析过程中可能有网络缓冲，若打不开网页，你可以用ping来测试一下。</p><p>3.上传插件并启用</p><p>这个比较简单，按照插件的步骤一步一步来即可。</p><p>4.设置oss4wp</p><p>&nbsp;</p><p>Bucket这里我们选择新建，CName这里为img.coolecho.net。</p><p>5.OSS绑定域名</p><p>&nbsp;<br />         这里我为了演示，就新建了一个img1.coolecho.net，这是错的，这里应该还是img.coolecho.net，然后下载文件上传至网站根目录，在验证绑定就行。<br />6.修改解析域名</p><p>这个时候你发现可以去上传，但是上传成功根本就找不到图片正确的路径。</p><p>点击这里就可以上传文件至OSS，但是所有的图片是这个样子的。</p><p>7.这个时候我们需要修改解析</p><p>回到万网，修改之前加上去的解析，将A改为CName，记录值为OSS域名，这里我的为oss-cn-hangzhou.aliyuncs.com，不同地区的不同。</p><p>&nbsp;</p><p>不知道记录值的，可以现在OSS上传一张图片，然后打开地址。</p><p>比如：<br /><a href="http://osscoolecho.oss-cn-hangzhou.aliyuncs.com/2015/04/liu.png">http://osscoolecho.oss-cn-hangzhou.aliyuncs.com/2015/04/liu.png</a><br />红色字体就是我们要的记录值。</p><p>8.修改插件</p><p>当你以为着所有的一切都完了之后，发现上传为文件依旧是找不到的，经过比对后发现，你就发现了一些问题</p><p>&nbsp;</p><p>OSS： <a href="http://osscoolecho.oss-cn-hangzhou.aliyuncs.com/2015/04/liu.png">http://osscoolecho.oss-cn-hangzhou.aliyuncs.com/2015/04/liu.png</a></p><p>wordpreess：<a href="http://img.coolecho.net/osscoolecho/2015/04/liu.png">http://img.coolecho.net/osscoolecho/2015/04/liu.png</a></p><p>之所以打不开是因为  wordpress中的url多了一个osscoolecho，也就是Bucket的名字，这时候我们只好自己去修改了。</p><p>打开插件，找到class-plugin-public.php文件：</p><p>将   .$this-&gt;options[‘bucket’].”/”   去掉即可。</p><p>本文云转载自：www.coolecho.net，谢谢这位博主了。</p>
