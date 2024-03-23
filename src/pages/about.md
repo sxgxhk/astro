@@ -1,36 +1,31 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "关于"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+#### 博客简介
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+- 博客网址：[https://057000.xyz/](https://057000.xyz/)
+- RSS订阅：[https://057000.xyz/feed](https://057000.xyz/feed)
+- 本博客致力于分享技术、趣事、心得，也就是记录自己平常的点点滴滴，自己的各种折腾史。博客从创立起到现在域名换来换去，各种各样的后缀用了很多（可能是一直没找到心仪的吧），这次换成057000.xyz除了xyz域名真的很便宜外，还有一个理由跟我目前生活的城市有关——衢州（区号：0570），衢州是一个很好玩，也很有灵气的地方，所以在0570的后面再加两个0是不是显得我这域名也挺灵气的233，也欢迎各位看客大佬们有空来衢州玩玩，转转。
+- 本博目前采用 ` Wordpress ` 搭建， ` Markdown ` 写作，托管于 [软云_RuanCloud](https://ruan.cloud/aff/EHCDQDQS "软云_RuanCloud") + [Cloudcone](https://app.cloudcone.com.cn/?ref=10762) + [七牛云存储](https://portal.qiniu.com/signup?code=3lm22u6rk7tqq) 。
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+#### 关于博主
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+- 博主乃一大浙江人士，懒宅、拖延症、强迫症患者，几乎天天不离电脑（还有手机），喜欢捣鼓，爱拆修（属折腾型）。
 
-## Tech Stack
+#### 博客进程
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
-
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+- 2012-03-01 博客成立，网址：blog.kl357.com，使用Wordpress作为博客程序，托管不知名虚拟主机
+- 2013-03-10 更换空间，从虚拟主机搬到西部数码（成都）节点
+- 2014-03-15 更换空间，从西部数码搬到阿里云华东（杭州）节点
+- 2014-12-11 更换域名为：uu126.cn，继续使用Wordpress
+- 2016-10-22 更换空间，从阿里云搬到华为云华东（上海）节点
+- 2016-11-04 博客程序由Wordpress更改为Typecho
+- 2018-01-01 因为撸到了腾讯云的2K优惠券，加上也差不多到期了，于是再次网站搬家到了腾讯云香港节点
+- 2018-02-08 再一次回归到Ghost
+- 2019-04-30 回归Typecho
+- 2019-08-31 一不小心回归到了Wordpress
+- 2020-03-01 因为不习惯Wordpress的编辑器，再次回归Typecho
+- 2023-12-22 主机搬家，顺便又用回Wordpress了
+- 2024-03-07 将域名更改为：[057000.xyz](https://057000.xyz/ "057000.xyz")
