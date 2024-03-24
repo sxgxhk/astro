@@ -98,21 +98,10 @@ const layoutProps = {
 
       <ShareLinks />
     </div>
-<!-- CSS -->
-<link href="https://unpkg.com/artalk@2.5.5/dist/Artalk.css" rel="stylesheet">
-<!-- JS -->
-<script src="https://unpkg.com/artalk@2.5.5/dist/Artalk.js"></script>
-<!-- Artalk -->
-<div id="Comments"></div>
-<script>
-  Artalk.init({
-    el:        '#Comments',              // 绑定元素的 Selector
-    pageKey:   '',                // 固定链接 (留空自动获取)
-    pageTitle: '', // 页面标题 (留空自动获取)
-    server:    'https://talk.057000.xyz',  // 后端地址
-    site:      'astro',           // 你的站点名
-  })
-</script>
+  <link href="https://unpkg.com/artalk@2.5.5/dist/Artalk.css" rel="stylesheet">
+  <script src="https://unpkg.com/artalk@2.5.5/dist/Artalk.js"></script>
+  <div id="Comments"></div>
+  <script>Artalk.init({el:'#Comments',pageKey:'',pageTitle:'',server:'https://talk.057000.xyz',site:'astro',})</script>
   </main>
   <Footer />
 </Layout>
