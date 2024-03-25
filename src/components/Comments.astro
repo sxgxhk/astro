@@ -1,9 +1,32 @@
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
-<div id="waline"></div>
-<script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-    init({
-      el: '#waline',
-      serverURL: 'https://waline.iblue.eu.org',
-    });
+<!-- CSS -->
+<link href="https://unpkg.com/artalk@2.5.5/dist/Artalk.css" rel="stylesheet"/>
+<!-- Artalk -->
+<div id="Comments"></div>
+<script>
+  document.addEventListener("astro:page-load", () => {
+    function loadTwikoo() {
+      const commentsContainer = document.getElementById("Comments");
+      if (commentsContainer) {
+        const script = document.createElement("script");
+        script.src ="https://unpkg.com/artalk@2.5.5/dist/Artalk.js";
+        script.async = true;
+        script.onload = () => {
+          // 在脚本加载完成后初始化评论工具
+          const initScript = document.createElement('script');
+          initScript.innerHTML = `
+          Artalk.init({
+            el: "#Comments", 
+            pageKey: "", 
+            pageTitle: "",
+            server: "https://talk.057000.xyz",
+            site: "astro",
+          });
+          `;
+        document.body.appendChild(initScript);
+        };
+        document.body.appendChild(script);
+      }
+    }
+    loadTwikoo();
+  });
 </script>
