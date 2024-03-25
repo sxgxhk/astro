@@ -1,9 +1,15 @@
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
-<div id="waline"></div>
-<script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-    init({
-      el: '#waline',
-      serverURL: 'https://waline.iblue.eu.org',
-    });
+<!-- CSS -->
+<link href="https://unpkg.com/artalk@2.5.5/dist/Artalk.css" rel="stylesheet">
+<!-- JS -->
+<script src="https://unpkg.com/artalk@2.5.5/dist/Artalk.js"></script>
+<!-- Artalk -->
+<div id="Comments"></div>
+<script>
+  init({
+    el:        '#Comments',
+    pageKey:   '',
+    pageTitle: '',
+    server:    'https://talk.057000.xyz',
+    site:      'astro',
+  })
 </script>
