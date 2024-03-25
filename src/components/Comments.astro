@@ -1,15 +1,14 @@
 <!-- CSS -->
 <link href="https://unpkg.com/artalk@2.5.5/dist/Artalk.css" rel="stylesheet">
-<!-- JS -->
-<script src="https://unpkg.com/artalk@2.5.5/dist/Artalk.js"></script>
 <!-- Artalk -->
 <div id="Comments"></div>
 <script>
+  import { init } from 'https://unpkg.com/artalk@2.5.5/dist/Artalk.js';  
   init({
-    el:        '#Comments',
-    pageKey:   '',
-    pageTitle: '',
-    server:    'https://talk.057000.xyz',
-    site:      'astro',
+    el:'#Comments',
+    pageKey:'',
+    pageTitle:'',
+    server:'https://talk.057000.xyz',
+    site:'astro',
   })
 </script>
