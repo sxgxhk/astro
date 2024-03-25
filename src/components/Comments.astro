@@ -4,7 +4,7 @@
 <div id="Comments"></div>
 <script>
   document.addEventListener("astro:page-load", () => {
-    function loadTwikoo() {
+    function loadArtalk() {
       const commentsContainer = document.getElementById("Comments");
       if (commentsContainer) {
         const script = document.createElement("script");
@@ -19,7 +19,7 @@
             pageKey: "", 
             pageTitle: "",
             server: "https://talk.057000.xyz",
-            site: "Astro",
+            site: "astro",
           });
           `;
         document.body.appendChild(initScript);
@@ -27,6 +27,6 @@
         document.body.appendChild(script);
       }
     }
-    loadTwikoo();
+    loadArtalk();
   });
 </script>
