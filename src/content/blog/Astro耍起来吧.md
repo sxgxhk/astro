@@ -7,7 +7,7 @@ slug: Astro-shua-qi-lai-ba
 featured: true
 draft: false
 tags:
-  - wordpress
+  - astro
 description:
   之前看[老麦](https://www.iamlm.com/ "老麦")的博客的文章，说是从NextJS换成Astro，很适合搭建静态博客，使用灵活，过程也不复杂，看的我又有折腾的方向了。目前我的博客除了主站在用的Wordpress外，还有其它的如：Typecho,Xlog，静态博客曾经也折腾过Hexo,Hugo（不过那都是很久的事了，其中搭建/使用等几乎也忘得差不多了），当然其它诸如：Ghost、Halo这种有后台的俺们以前也是用过的
 ---
