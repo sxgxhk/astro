@@ -13,7 +13,7 @@ export const SITE: Site = {
 
 export const LOCALE = {
   lang: "zh", // html lang code. Set this empty and default will be "en"
-  langTag: ["zh-cn"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+  langTag: ["zh-Hans"], // BCP 47 Language Tags. Set this empty [] to use the environment default
 } as const;
 
 export const LOGO_IMAGE = {
