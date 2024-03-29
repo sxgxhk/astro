@@ -133,7 +133,19 @@
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
 }
+
+/* CSS for Astro website using Microsoft YaHei font */
 body {
-  /* Screen version */
-  font-family: "LXGW WenKai Screen", sans-serif;
+  font-family: "Microsoft YaHei", Arial, sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+p, li, a {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+button, input, textarea {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+/* Additional styles can be added here */
+
