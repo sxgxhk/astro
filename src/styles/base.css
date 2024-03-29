@@ -136,16 +136,7 @@
 
 /* CSS for Astro website using Microsoft YaHei font */
 body {
-  font-family: "Microsoft YaHei", Arial, sans-serif;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Microsoft YaHei", Arial, sans-serif;
-}
-p, li, a {
-  font-family: "Microsoft YaHei", Arial, sans-serif;
-}
-button, input, textarea {
-  font-family: "Microsoft YaHei", Arial, sans-serif;
+  font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 }
 /* Additional styles can be added here */
 
