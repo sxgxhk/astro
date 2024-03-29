@@ -54,7 +54,7 @@ const layoutProps = {
     <div class="progress-bar h-1 w-0 bg-skin-accent" id="myBar"></div>
   </div> -->
 
-  <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
+  <div class="mx-auto flex w-full max-w-screen-lg justify-start px-2">
     <button
       class="focus-outline mb-2 mt-8 flex hover:opacity-75"
       onclick="(() => (history.length === 1) ? window.location = '/' : history.back())()"
@@ -74,7 +74,11 @@ const layoutProps = {
       size="lg"
       className="my-2"
     />
-    <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
+    <article
+      id="article"
+      role="article"
+      class="prose mx-auto mt-8 max-w-screen-lg"
+    >
       <Content />
     </article>
 
@@ -83,7 +87,7 @@ const layoutProps = {
     </ul>
 
     <div
-      class="flex flex-col-reverse items-center justify-between gap-6 sm:flex-row-reverse sm:items-end sm:gap-4"
+      class="flex flex-col-reverse items-center justify-between gap-6 lg:flex-row-reverse lg:items-end lg:gap-4"
     >
       <button
         id="back-to-top"
@@ -99,14 +103,14 @@ const layoutProps = {
 
       <ShareLinks />
     </div>
-   <Comments />
+    <Comments />
   </main>
   <Footer />
 </Layout>
 
 <style>
   main {
-    @apply mx-auto w-full max-w-3xl px-4 pb-12;
+    @apply mx-auto w-full max-w-screen-lg px-4 pb-12;
   }
   .post-title {
     @apply text-2xl font-semibold text-skin-accent;

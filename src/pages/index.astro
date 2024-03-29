@@ -42,16 +42,16 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        本博客由Astro驱动 ，主题为AstroPaper，一个非常棒的主题。目前文章都是由我的主站搬运而来，如有指教请留下你的宝贵评论，谢谢！
+        本博客由Astro驱动
+        ，主题为AstroPaper，一个非常棒的主题。目前文章都是由我的主站搬运而来，如有指教请留下你的宝贵评论，谢谢！
       </p>
-    </section>  
+    </section>
     <Hr />
 
     {
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            
             <ul>
               {featuredPosts.map(({ data, slug }) => (
                 <Card
@@ -108,22 +108,22 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply pb-6 pt-8;
   }
   #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    @apply my-4 inline-block text-3xl font-bold lg:my-8 lg:text-5xl;
   }
   #hero .rss-link {
     @apply mb-6;
   }
   #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent lg:mb-3 lg:scale-125;
   }
   #hero p {
     @apply my-2;
   }
   .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+    @apply mt-4 flex flex-col lg:flex-row lg:items-center;
   }
   .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+    @apply mb-1 mr-2 whitespace-nowrap lg:mb-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
